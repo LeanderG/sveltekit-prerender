@@ -1,5 +1,5 @@
 <script>
-	let pages = Array.from({ length: 30 }, (_, i) => i + 1);
+	let pages = Array.from({ length: 300 }, (_, i) => i + 1);
 </script>
 
 <svelte:head>

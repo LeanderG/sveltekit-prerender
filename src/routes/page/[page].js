@@ -7,7 +7,7 @@ const stmt = db.prepare('SELECT MID, DISCIPL FROM museum LIMIT ?, ?');
 export async function get({ request, params }) {
 	const page = params.page;
 
-	if (!(page > 0 && page <= 30)) {
+	if (!(page > 0 && page <= 300)) {
 		return {
 			status: 404
 		};
