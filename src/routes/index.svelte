@@ -7,7 +7,5 @@
 </svelte:head>
 
 {#each pages as page}
-	<div>
-		<a href={'/page/' + page}>Page {page}</a>
-	</div>
+	<a href={'/page/' + page}>Page {page}</a>
 {/each}

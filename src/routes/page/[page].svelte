@@ -8,9 +8,7 @@
 </svelte:head>
 
 {#each museums as museum}
-	<div>
-		<a href={'/museum/' + museum.MID}>
-			{museum.MID}
-		</a>
-	</div>
+	<a href={'/museum/' + museum.MID}>
+		{museum.MID}
+	</a>
 {/each}
