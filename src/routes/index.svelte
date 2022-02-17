@@ -1,7 +1,3 @@
-<script context="module">
-	export const hydrate = false;
-</script>
-
 <script>
 	let pages = Array.from({ length: 30 }, (_, i) => i + 1);
 </script>
