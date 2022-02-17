@@ -1,0 +1,17 @@
+<script context="module">
+	export const hydrate = false;
+</script>
+
+<script>
+	let pages = Array.from({ length: 30 }, (_, i) => i + 1);
+</script>
+
+<svelte:head>
+	<title>Home</title>
+</svelte:head>
+
+{#each pages as page}
+	<div>
+		<a href={'/page/' + page}>Page {page}</a>
+	</div>
+{/each}
