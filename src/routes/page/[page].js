@@ -13,7 +13,7 @@ export async function get({ request, params }) {
 		};
 	}
 
-	const museums = stmt.all(100 * page, 100 * (page - 1));
+	const museums = stmt.all(100 * (page - 1), 100);
 	return {
 		body: { museums, page }
 	};
