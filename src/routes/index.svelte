@@ -1,5 +1,6 @@
 <script>
-	let pages = Array.from({ length: 40 }, (_, i) => i + 1);
+	import { maxPages } from '$lib/constants';
+	let pages = Array.from({ length: maxPages }, (_, i) => i + 1);
 </script>
 
 <svelte:head>
